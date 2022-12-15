@@ -1,4 +1,4 @@
-# hw4-grpc
+# hw4-consumeAPIs
 
 Please run the following command in service folder to generate the gRPC client and server interfaces from our .proto service definition. 
 
