@@ -7,6 +7,8 @@ import bookstore_pb2
 
 
 class Client:
+    """Client class encapsulating API"""
+
     def __init__(self):
         self.port = 50051
         self.ip = "localhost:"

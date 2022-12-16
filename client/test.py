@@ -5,6 +5,8 @@ from get_book_titles import get_book_title
 
 
 class MockAPIClassInterface:
+    "MockAPIClassInterface class mocks API client"
+
     def __init__(self):
         self.expect = ["17645_a1", "17645_a2"]
 
@@ -21,9 +23,11 @@ class TestInventoryService(unittest.TestCase):
         self.expect = ["17645_a1", "17645_a2"]
 
     def test_mock_client(self):
+        """a unit test using a mock client"""
         self.assertEqual(self.mockAPI.mock(), self.expect)
 
     def test_live_server(self):
+        """a unit test using a live server"""
         self.assertEqual(get_book_title(self.client, ["1", "2"]), self.expect)
 
 
